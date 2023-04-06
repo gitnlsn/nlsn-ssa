@@ -1,10 +1,19 @@
 {
   "name": "nlsn-ssa",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "Synchronizes simultaneous asynchronous events in Javascript",
   "author": "nelson kenzo tamashiro <nelsonkenzotamashiro@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
+  "keywords": [
+    "synchronize",
+    "simultaneous",
+    "asynchronous",
+    "events",
+    "timeLapse",
+    "time",
+    "lapse"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/gitnlsn/nlsn-ssa"

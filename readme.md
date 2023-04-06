@@ -26,20 +26,17 @@ const defaultSynchronizeHandle: SynchronizeHandle = (events) => {
 const { foo, bar } = SSA({
   timeLapse: 100, // time lapse in ms,
   events: {
-    foo: () => jest.fn().mockImplementation (() => console.log("hello foo")),
-    bar: () => jest.fn().mockImplementation (() => console.log('hello bar')),
+    foo: () => jest.fn().mockImplementation(() => console.log("hello foo")),
+    bar: () => jest.fn().mockImplementation(() => console.log("hello bar")),
   },
-  synchronizeHandle: (events: Array<IdentifiedEvent<Tag, CallbackSignature>>) => {
-    events.
-  }
+  synchronizeHandle: defaultSynchronizeHandle,
 })
 
-// Simultaneous call to foo and bar
+// Simultaneous call to foo and bar under 100ms
 foo()
 bar()
 
 // Waits for 100ms
 expect(foo).toHaveBeenCalledTimes(1)
 expect(bar).toHaveBeenCalledTimes(0)
-
 ```
