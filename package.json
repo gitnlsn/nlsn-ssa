@@ -1,6 +1,6 @@
 {
   "name": "nlsn-ssa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Synchronizes simultaneous asynchronous events in Javascript",
   "author": "nelson kenzo tamashiro <nelsonkenzotamashiro@gmail.com>",
   "license": "MIT",
