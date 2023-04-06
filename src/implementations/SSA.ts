@@ -3,8 +3,8 @@ import { SimultaneousAsynchronousSynchronizer } from "./SimultaneousAsynchronous
 
 /**
  * Synchronize simultaneous asynchronous events.
- * Shortcut to SimultaneousAsynchronousSynchronizer create factory method.
+ * Shortcut to SimultaneousAsynchronousSynchronizer getSynchronizedEvents.
  */
 export const SSA = <EventsObject extends Record<string, Function>>(
   props: SynchronizeSimultaneousAsynchronousCreateProps<EventsObject>
-) => SimultaneousAsynchronousSynchronizer.create(props)
+) => SimultaneousAsynchronousSynchronizer.create(props).getSynchronizedEvents()
