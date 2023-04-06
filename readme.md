@@ -1,3 +1,8 @@
+[![Build](https://github.com/gitnlsn/nlsn-ssa/actions/workflows/build.yml/badge.svg)](https://github.com/gitnlsn/nlsn-ssa/actions/workflows/build.yml)
+[![Tests](https://github.com/gitnlsn/nlsn-ssa/actions/workflows/tests.yml/badge.svg)](https://github.com/gitnlsn/nlsn-ssa/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/gitnlsn/nlsn-ssa/branch/main/graph/badge.svg?token=c9IfyKZS5O)](https://codecov.io/gh/gitnlsn/nlsn-ssa)
+[![npm version](https://badge.fury.io/js/nlsn-ssa.svg)](https://badge.fury.io/js/nlsn-ssa)
+
 # Description
 
 Asynchronous events may be triggered almost simultaneously triggering callbacks that changes the same state leading to undesidered states.
@@ -9,6 +14,18 @@ This way, if those asynchronous events occur almost simultaneouly given a timeLa
 Default synchronizeHandle triggers the first event on the stack and ignores the remaining.
 
 # Usage
+
+Install `nlsn-ssa` with npm or yarn.
+
+```bash
+# npm
+npm install nlsn-ssa
+
+# yarn
+yarn add nlsn-ssa
+```
+
+Then you can use `SSA` with the following syntax.
 
 ```ts
 import { SSA } from "nlsn-ssa"
